@@ -7,7 +7,7 @@ import javax.validation.constraints.*;
 public class LoginData {
 
     @NotEmpty(message = "UserName Can not be empty!!")
-    @Size(min = 3, max = 12, message = "UserName Must to be between 3-12 character!!")
+    @Size(min = 3, max = 13, message = "UserName Must to be between 3-12 character!!")
     private String userName;
     @Pattern(regexp = "^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\\.[a-zA-Z0-9-]+)*$", message = "Invalid E-Mail!")
     //@Email(regexp = "^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\\.[a-zA-Z0-9-]+)*$")
